@@ -5,6 +5,24 @@ use warnings;
 
 our $VERSION = '0.01';
 
+use Test::Builder;
+use File::Slurp;
+
+no warnings 'redefine';
+my $ORIGINAL_ok = \&Test::Builder::ok;
+*Test::Builder::ok = sub {
+	my %filecache;
+	$_[2] ||= do {
+		my ($package, $filename, $line) = caller($Test::Builder::Level);
+		my $file = $filecache{$filename} ||= [ read_file($filename) ];
+		my $lnum = $line;
+		$line = $file->[$lnum-1];
+		$line =~ s{^\s+|\s+$}{}g;
+		"L$lnum: $line";
+	};
+	goto &$ORIGINAL_ok;
+};
+
 
 1;
 __END__
@@ -13,22 +31,30 @@ __END__
 
 =head1 NAME
 
-Test::Name::FromLine - 
+Test::Name::FromLine - Auto fill test names from caller line
 
 =head1 SYNOPSIS
 
-  use Test::Name::FromLine;
+  use Test::Name::FromLine; # just use this
+  use Test::More;
+
+  is 1, 1; #=> ok 1 - L3: is 1, 1;
+
+  done_testing;
 
 
 =head1 DESCRIPTION
 
-Test::Name::FromLine is 
+Test::Name::FromLine is test utility that fills test names from its file.
+Just use this module in test and this module fill test names to all test except named one.
 
 =head1 AUTHOR
 
 cho45 E<lt>cho45@lowreal.netE<gt>
 
 =head1 SEE ALSO
+
+This is inspired from L<http://subtech.g.hatena.ne.jp/motemen/20101214/1292316676>.
 
 =head1 LICENSE
 
