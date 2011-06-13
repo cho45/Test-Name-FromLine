@@ -1,0 +1,27 @@
+This is Perl module Text::Xatena.
+
+INSTALLATION
+
+Test::Name::FromLine installation is straightforward. If your CPAN shell is set up,
+you should just be able to do
+
+    % cpan Test::Name::FromLine
+
+Download it, unpack it, then build it as per the usual:
+
+    % perl Makefile.PL
+    % make && make test
+
+Then install it:
+
+    % make install
+
+DOCUMENTATION
+
+Test::Name::FromLine documentation is available as in POD. So you can do:
+
+    % perldoc Test::Name::FromLine
+
+to read the documentation online with your favorite pager.
+
+cho45
