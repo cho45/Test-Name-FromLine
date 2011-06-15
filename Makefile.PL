@@ -22,9 +22,11 @@ use inc::Module::Install;
 name 'Test-Name-FromLine';
 all_from 'lib/Test/Name/FromLine.pm';
 
-requires 'Exporter::Lite';
+requires 'Test::Builder';
+requires 'File::Slurp';
 
-build_requires 'Test::Most';
+build_requires 'Test::More';
+build_requires 'Test::Differences';
 
 # Module::Install::AuthorTests
 author_tests('xt');
