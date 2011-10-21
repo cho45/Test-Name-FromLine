@@ -1,2 +1,6 @@
+2011-10-22  SATOH Hiroh <cho45@lowreal.net>
+
+	* 0.02: Enable cache
+
 
 vim:set ft=changelog:
