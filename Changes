@@ -1,3 +1,7 @@
+2012-06-15  SATOH Hiroh <cho45@lowreal.net>
+
+	* 0.04: Fix Makefile.PL (by mechairoi)
+
 2011-10-22  SATOH Hiroh <cho45@lowreal.net>
 
 	* 0.02: Enable cache
