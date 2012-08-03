@@ -7,7 +7,10 @@ our $VERSION = '0.04';
 
 use Test::Builder;
 use File::Slurp;
+use File::Spec;
+use Cwd qw(getcwd);
 
+our $BASE_DIR = getcwd();
 our %filecache;
 
 no warnings 'redefine';
@@ -15,6 +18,7 @@ my $ORIGINAL_ok = \&Test::Builder::ok;
 *Test::Builder::ok = sub {
 	$_[2] ||= do {
 		my ($package, $filename, $line) = caller($Test::Builder::Level);
+		$filename = File::Spec->catfile($BASE_DIR, $filename);
 		my $file = $filecache{$filename} ||= [ read_file($filename) ];
 		my $lnum = $line;
 		$line = $file->[$lnum-1];
