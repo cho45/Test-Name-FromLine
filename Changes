@@ -1,3 +1,7 @@
+2012-08-04  SATOH Hiroh <cho45@lowreal.net>
+
+	* 0.05: Fix bug with using chdir (by xaicron)
+
 2012-06-15  SATOH Hiroh <cho45@lowreal.net>
 
 	* 0.04: Fix Makefile.PL (by mechairoi)

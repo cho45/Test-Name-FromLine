@@ -27,3 +27,4 @@ META.yml
 README
 t/00_compile.t
 t/base.t
+t/chdir.t
