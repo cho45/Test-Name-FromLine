@@ -26,5 +26,6 @@ MANIFEST			This list of files
 META.yml
 README
 t/00_compile.t
+t/02_invalid_level.t
 t/base.t
 t/chdir.t

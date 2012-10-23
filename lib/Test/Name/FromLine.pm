@@ -3,7 +3,7 @@ package Test::Name::FromLine;
 use strict;
 use warnings;
 
-our $VERSION = '0.03';
+our $VERSION = '0.06';
 
 use Test::Builder;
 use File::Slurp;
