@@ -19,7 +19,7 @@ my $ORIGINAL_ok = \&Test::Builder::ok;
 	$_[2] ||= do {
 		my ($package, $filename, $line) = caller($Test::Builder::Level);
 		if ($filename) {
-			$filename = File::Spec->catfile($BASE_DIR, $filename);
+			$filename = File::Spec->rel2abs($filename, $BASE_DIR);
 			my $file = $filecache{$filename} ||= [ read_file($filename) ];
 			my $lnum = $line;
 			$line = $file->[$lnum-1];
