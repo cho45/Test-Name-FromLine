@@ -29,3 +29,5 @@ t/00_compile.t
 t/02_invalid_level.t
 t/base.t
 t/chdir.t
+t/line_from_abs.t
+t/Test.pm

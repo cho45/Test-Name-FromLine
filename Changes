@@ -1,3 +1,7 @@
+2012-11-08  SATOH Hiroh <cho45@lowreal.net>
+
+	* 0.08: Fix getting real filename (fixed by miyagawa)
+
 2012-10-23  SATOH Hiroh <cho45@lowreal.net>
 
 	* 0.06: Fix strange error when $Test::Builder::Level is invalid (reported by tokuhirom)
