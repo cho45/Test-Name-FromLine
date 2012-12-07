@@ -1,3 +1,7 @@
+2012-12-07  SATOH Hiroh <cho45@lowreal.net>
+
+	* 0.09: Fix behaviour on -e
+
 2012-11-08  SATOH Hiroh <cho45@lowreal.net>
 
 	* 0.08: Fix getting real filename (fixed by miyagawa)
