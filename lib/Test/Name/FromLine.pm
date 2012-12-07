@@ -18,6 +18,7 @@ my $ORIGINAL_ok = \&Test::Builder::ok;
 *Test::Builder::ok = sub {
 	$_[2] ||= do {
 		my ($package, $filename, $line) = caller($Test::Builder::Level);
+		undef $filename if $filename eq '-e';
 		if ($filename) {
 			$filename = File::Spec->rel2abs($filename, $BASE_DIR);
 			my $file = $filecache{$filename} ||= [ read_file($filename) ];
