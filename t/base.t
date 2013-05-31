@@ -58,7 +58,7 @@ eq_or_diff test_test {
 eq_or_diff test_test {
 	is 1, 1, 'name';
 } -> {output}, x q{
-ok 1 - name
+ok 1 - L59: name
 }, 'has name';
 
 eq_or_diff test_test {

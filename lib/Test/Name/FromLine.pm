@@ -16,7 +16,7 @@ our %filecache;
 no warnings 'redefine';
 my $ORIGINAL_ok = \&Test::Builder::ok;
 *Test::Builder::ok = sub {
-	$_[2] ||= do {
+	$_[2] = do {
 		my ($package, $filename, $line) = caller($Test::Builder::Level);
 		undef $filename if $filename eq '-e';
 		if ($filename) {
@@ -25,7 +25,11 @@ my $ORIGINAL_ok = \&Test::Builder::ok;
 			my $lnum = $line;
 			$line = $file->[$lnum-1];
 			$line =~ s{^\s+|\s+$}{}g;
-			"L$lnum: $line";
+			if ($_[2]) {
+				"L$lnum: $_[2]";
+			} else {
+				"L$lnum: $line";
+			}
 		} else {
 			""; # invalid $Test::Builder::Level
 		}
