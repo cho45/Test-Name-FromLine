@@ -1,3 +1,9 @@
+{{$NEXT}}
+
+0.10 2013-05-31T07:38:39Z
+
+	- Append line number to exiting comment
+
 2012-12-07  SATOH Hiroh <cho45@lowreal.net>
 
 	* 0.09: Fix behaviour on -e
@@ -27,5 +33,3 @@
 
 	* 0.02: Enable cache
 
-
-vim:set ft=changelog:
