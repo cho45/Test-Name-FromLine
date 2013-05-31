@@ -10,3 +10,10 @@ pod.html
 cover_db
 startup.sh
 MYMETA*
+/Test-Name-FromLine-*
+/.build
+/_build_params
+/Build
+!Build/
+!META.json
+!LICENSE
