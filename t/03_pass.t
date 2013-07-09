@@ -5,10 +5,9 @@ use Test::More;
 use Test::Name::FromLine;
 use Test::Fatal;
 
-
 is exception {
-	local $Test::Builder::Level = 9999;
-	ok 1;
+	pass "foo";
 }, undef;
 
 done_testing;
+

@@ -16,6 +16,7 @@ our %filecache;
 no warnings 'redefine';
 my $ORIGINAL_ok = \&Test::Builder::ok;
 *Test::Builder::ok = sub {
+	@_ = @_; # for pass and fail
 	$_[2] = do {
 		my ($package, $filename, $line) = caller($Test::Builder::Level);
 		undef $filename if $filename eq '-e';
