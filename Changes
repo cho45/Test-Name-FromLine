@@ -1,5 +1,9 @@
 {{$NEXT}}
 
+0.11 2013-07-09T05:39:27Z
+
+	- Fix error on pass/fail (reported by mosasiru)
+
 0.10 2013-05-31T07:38:39Z
 
 	- Append line number to exiting comment
