@@ -48,12 +48,12 @@ ok 1 - L44: is 1, 1;
 
 eq_or_diff test_test {
 	is 1, 0;
-} -> {failure_output}, x q{
+} -> {failure_output}, x "
 #   Failed test 'L50: is 1, 0;'
-#   at t/base.t line 50.
+#   at $0 line 50.
 #          got: '1'
 #     expected: '0'
-}, 'is 1, 0 => ng';
+", 'is 1, 0 => ng';
 
 eq_or_diff test_test {
 	is 1, 1, 'name';
