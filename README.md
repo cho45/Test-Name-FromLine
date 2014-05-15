@@ -11,8 +11,6 @@ Test::Name::FromLine - Auto fill test names from caller line
 
     done_testing;
 
-
-
 # DESCRIPTION
 
 Test::Name::FromLine is test utility that fills test names from its file.

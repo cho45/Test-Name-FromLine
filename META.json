@@ -4,7 +4,7 @@
       "cho45 <cho45@lowreal.net>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Minilla/v0.4.5, CPAN::Meta::Converter version 2.131490",
+   "generated_by" : "Minilla/v1.0.0, CPAN::Meta::Converter version 2.141170",
    "license" : [
       "perl_5"
    ],
@@ -21,7 +21,8 @@
          "share",
          "eg",
          "examples",
-         "author"
+         "author",
+         "builder"
       ]
    },
    "prereqs" : {
@@ -43,7 +44,8 @@
       "develop" : {
          "requires" : {
             "Test::CPAN::Meta" : "0",
-            "Test::MinimumVersion" : "0.10108",
+            "Test::MinimumVersion::Fast" : "0.04",
+            "Test::PAUSE::Permissions" : "0.04",
             "Test::Pod" : "1.41",
             "Test::Spellunker" : "v0.2.7"
          }
@@ -64,14 +66,15 @@
       "homepage" : "https://github.com/cho45/Test-Name-FromLine",
       "repository" : {
          "type" : "git",
-         "url" : "git://github.com/cho45/Test-Name-FromLine.git",
+         "url" : "git://github.com/cho45/Test-Name-FromLine",
          "web" : "https://github.com/cho45/Test-Name-FromLine"
       }
    },
-   "version" : "0.11",
+   "version" : "0.12",
    "x_contributors" : [
       "mechairoi <ttsujikawa@gmail.com>",
       "xaicron <xaicron@gmail.com>",
-      "Tatsuhiko Miyagawa <miyagawa@bulknews.net>"
+      "Tatsuhiko Miyagawa <miyagawa@bulknews.net>",
+      "Christian Walde <walde.christian@googlemail.com>"
    ]
 }

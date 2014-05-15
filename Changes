@@ -1,5 +1,8 @@
 {{$NEXT}}
 
+0.12 2014-05-15T23:47:04Z
+	- Fix test on Win32 (reported by MidLifeXis, fixed by wchristian)
+
 0.11 2013-07-09T05:39:27Z
 
 	- Fix error on pass/fail (reported by mosasiru)

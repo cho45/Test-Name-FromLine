@@ -3,7 +3,7 @@ package Test::Differences;
 
 #line 284
 
-our $VERSION = "0.11"; # or "0.001_001" for a dev release
+our $VERSION = "0.12"; # or "0.001_001" for a dev release
 $VERSION = eval $VERSION;
 
 use Exporter;
