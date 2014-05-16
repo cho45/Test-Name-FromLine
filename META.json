@@ -70,11 +70,12 @@
          "web" : "https://github.com/cho45/Test-Name-FromLine"
       }
    },
-   "version" : "0.12",
+   "version" : "0.13",
    "x_contributors" : [
       "mechairoi <ttsujikawa@gmail.com>",
       "xaicron <xaicron@gmail.com>",
       "Tatsuhiko Miyagawa <miyagawa@bulknews.net>",
-      "Christian Walde <walde.christian@googlemail.com>"
+      "Christian Walde <walde.christian@googlemail.com>",
+      "mattn <mattn.jp@gmail.com>"
    ]
 }

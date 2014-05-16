@@ -1,5 +1,8 @@
 {{$NEXT}}
 
+0.13 2014-05-16T14:35:53Z
+	- Fix warning (uninitialized value) (fixed by mattn)
+
 0.12 2014-05-15T23:47:04Z
 	- Fix test on Win32 (reported by MidLifeXis, fixed by wchristian)
 
